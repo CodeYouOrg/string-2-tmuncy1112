@@ -9,8 +9,13 @@
 # Return the resulting string.
 
 def verbing(s):
-    # +++your code here+++
-    return
+    if len(s) >= 3:
+        if s.endswith('ing'):
+            return s + 'ly'
+        else:
+            return s + 'ing'
+    return s
+  
 
 
 # E. not_bad
@@ -36,6 +41,9 @@ def not_bad(s):
 #  a-front + b-front + a-back + b-back
 
 def front_back(a, b):
+    a_mid = (len(a) + 1) // 2
+    b_mid = (len(b) + 1) // 2
+    
     # +++your code here+++
     return
 
